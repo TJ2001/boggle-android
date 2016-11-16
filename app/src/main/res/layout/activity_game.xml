@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.guest.bogglesolitaire.GameActivity">
+    tools:context="com.example.guest.bogglesolitaire.GameActivity"
+    android:background="@color/foreground_material_light">
 
     <Button
         android:layout_width="wrap_content"
@@ -35,77 +36,101 @@
         android:inputType="text" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter0"
         android:layout_marginTop="52dp"
         android:layout_below="@+id/resetGame"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter1"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"
         android:layout_above="@+id/letter3"
-        android:layout_alignLeft="@+id/letter5"
-        android:layout_alignStart="@+id/letter5" />
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter2"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"
         android:layout_alignTop="@+id/letter1"
         android:layout_alignLeft="@+id/letter6"
         android:layout_alignStart="@+id/letter6" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter4"
         android:layout_above="@+id/letter3"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter3"
         android:layout_marginTop="94dp"
         android:layout_below="@+id/letter0"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter5"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"
         android:layout_alignTop="@+id/letter3"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText" />
+        android:layout_alignLeft="@+id/letter1"
+        android:layout_alignStart="@+id/letter1" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter6"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"
         android:layout_alignTop="@+id/letter5"
         android:layout_toRightOf="@+id/editText"
         android:layout_toEndOf="@+id/editText" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter7"
         android:layout_alignTop="@+id/letter5"
         android:layout_alignLeft="@+id/letter4"
-        android:layout_alignStart="@+id/letter4" />
+        android:layout_alignStart="@+id/letter4"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center" />
 
 </RelativeLayout>
