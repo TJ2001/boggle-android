@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guest.bogglesolitaire.GameActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resetGame"
+        android:id="@+id/resetGame"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/resetGame"
+        android:layout_alignEnd="@+id/resetGame" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter0"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/resetGame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter1"
+        android:layout_above="@+id/letter3"
+        android:layout_alignLeft="@+id/letter5"
+        android:layout_alignStart="@+id/letter5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter2"
+        android:layout_alignTop="@+id/letter1"
+        android:layout_alignLeft="@+id/letter6"
+        android:layout_alignStart="@+id/letter6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter4"
+        android:layout_above="@+id/letter3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter3"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/letter0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter5"
+        android:layout_alignTop="@+id/letter3"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter6"
+        android:layout_alignTop="@+id/letter5"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/letter7"
+        android:layout_alignTop="@+id/letter5"
+        android:layout_alignLeft="@+id/letter4"
+        android:layout_alignStart="@+id/letter4" />
+
+</RelativeLayout>

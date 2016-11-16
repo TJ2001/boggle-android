@@ -1,34 +1,24 @@
 package com.example.guest.bogglesolitaire;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Character x;
-        String y = "";
-        String tmp;
-        for (int i = 0; i < 8; i++) {
-            if (i == 0 || i == 1) {
-                do {
-                    x = rndChar();
-                    tmp = x.toString();
-                    Log.d("randm string is", tmp);
-                } while (!(tmp.equals("A") || tmp.equals("E") || tmp.equals("I") || tmp.equals("O") || tmp.equals("U")));
-            } else{
-                x = rndChar();
-            }
-            y += x.toString();
-        }
-        Log.d("random string:", y);
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(this);
     }
 
-    private static char rndChar () {
-        return (char) ('A' + (Math.random() * 26) % 26);
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, GameActivity.class));
     }
 }
