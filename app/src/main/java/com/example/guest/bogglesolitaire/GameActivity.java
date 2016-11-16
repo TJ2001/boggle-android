@@ -2,9 +2,12 @@ package com.example.guest.bogglesolitaire;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.CharacterPickerDialog;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -28,22 +31,18 @@ public class GameActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         randomCharacters = generateString();
         Log.d("Your random string is", randomCharacters);
-        Character x = randomCharacters.charAt(0);
-        Character x1 = randomCharacters.charAt(1);
-        Character x2 = randomCharacters.charAt(2);
-        Character x3 = randomCharacters.charAt(3);
-        Character x4 = randomCharacters.charAt(4);
-        Character x5 = randomCharacters.charAt(5);
-        Character x6 = randomCharacters.charAt(6);
-        Character x7 = randomCharacters.charAt(7);
-        mLetter0.setText(x.toString());
-        mLetter1.setText(x1.toString());
-        mLetter2.setText(x2.toString());
-        mLetter3.setText(x3.toString());
-        mLetter4.setText(x4.toString());
-        mLetter5.setText(x5.toString());
-        mLetter6.setText(x6.toString());
-        mLetter7.setText(x7.toString());
+        ArrayList<Character> characters = new ArrayList<>();
+        for (int i = 0; i < 8; i++) {
+            characters.add(randomCharacters.charAt(i));
+        }
+        mLetter0.setText(characters.get(0).toString());
+        mLetter1.setText(characters.get(1).toString());
+        mLetter2.setText(characters.get(2).toString());
+        mLetter3.setText(characters.get(3).toString());
+        mLetter4.setText(characters.get(4).toString());
+        mLetter5.setText(characters.get(5).toString());
+        mLetter6.setText(characters.get(6).toString());
+        mLetter7.setText(characters.get(7).toString());
     }
 
     private String generateString(){
