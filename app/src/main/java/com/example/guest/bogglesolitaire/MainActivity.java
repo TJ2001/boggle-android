@@ -11,18 +11,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Character x;
-        String y;
+        String y = "";
+        String tmp;
         for (int i = 0; i < 8; i++) {
-            x = rndChar();
-            y = x.toString();
-            Log.d("random char:", y);
+            if (i == 0 || i == 1) {
+                do {
+                    x = rndChar();
+                    tmp = x.toString();
+                    Log.d("randm string is", tmp);
+                } while (!(tmp.equals("A") || tmp.equals("E") || tmp.equals("I") || tmp.equals("O") || tmp.equals("U")));
+            } else{
+                x = rndChar();
+            }
+            y += x.toString();
         }
+        Log.d("random string:", y);
     }
 
     private static char rndChar () {
-        int rnd = (int) (Math.random() * 26); // or use Random or whatever
-        char base = 'A';
-        return (char) (base + rnd % 26);
-
+        return (char) ('A' + (Math.random() * 26) % 26);
     }
 }
