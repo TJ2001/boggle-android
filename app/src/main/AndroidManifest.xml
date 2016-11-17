@@ -24,7 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.guest.bogglesolitaire.MainActivity" />
         </activity>
-        <activity android:name=".WordListActivity"></activity>
+        <activity
+            android:name=".WordListActivity"
+            android:theme="@style/GameActionBar">>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guest.bogglesolitaire.GameActivity" />
+        </activity>
+
     </application>
 
 </manifest>
