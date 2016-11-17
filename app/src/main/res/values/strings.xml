@@ -3,4 +3,5 @@
     <string name="play">Play Boggle</string>
     <string name="desc">Image of Boggle</string>
     <string name="resetGame">Reset Game</string>
+    <string name="enterWord">Enter Word</string>
 </resources>

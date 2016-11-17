@@ -10,6 +10,8 @@
     tools:context="com.example.guest.bogglesolitaire.GameActivity"
     android:background="@color/foreground_material_light">
 
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,44 +23,38 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
+        android:text="@string/enterWord"
+        android:id="@+id/submit"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/resetGame"
         android:layout_alignEnd="@+id/resetGame" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_above="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:inputType="text" />
+
 
     <TextView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter0"
-        android:layout_marginTop="52dp"
-        android:layout_below="@+id/resetGame"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
         android:background="@drawable/block"
         android:textSize="60sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_below="@+id/resetGame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="New Text"
         android:id="@+id/letter1"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/block"
         android:textSize="60sp"
         android:textAlignment="center"
-        android:layout_above="@+id/letter3"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText" />
+        android:layout_above="@+id/letter6"
+        android:layout_toRightOf="@+id/letter0"
+        android:layout_toEndOf="@+id/letter0" />
 
     <TextView
         android:layout_width="80dp"
@@ -69,33 +65,33 @@
         android:textSize="60sp"
         android:textAlignment="center"
         android:layout_alignTop="@+id/letter1"
-        android:layout_alignLeft="@+id/letter6"
-        android:layout_alignStart="@+id/letter6" />
-
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:text="New Text"
-        android:id="@+id/letter4"
-        android:layout_above="@+id/letter3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/block"
-        android:textSize="60sp"
-        android:textAlignment="center"/>
+        android:layout_alignLeft="@+id/letter5"
+        android:layout_alignStart="@+id/letter5" />
 
     <TextView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter3"
-        android:layout_marginTop="94dp"
-        android:layout_below="@+id/letter0"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:background="@drawable/block"
         android:textSize="60sp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/letter2"
+        android:layout_alignRight="@+id/submission"
+        android:layout_alignEnd="@+id/submission" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="New Text"
+        android:id="@+id/letter4"
+        android:background="@drawable/block"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/letter0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="80dp"
@@ -105,9 +101,11 @@
         android:background="@drawable/block"
         android:textSize="60sp"
         android:textAlignment="center"
-        android:layout_alignTop="@+id/letter3"
-        android:layout_alignLeft="@+id/letter1"
-        android:layout_alignStart="@+id/letter1" />
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/letter2"
+        android:layout_toLeftOf="@+id/letter3"
+        android:layout_toStartOf="@+id/letter3" />
 
     <TextView
         android:layout_width="80dp"
@@ -117,20 +115,32 @@
         android:background="@drawable/block"
         android:textSize="60sp"
         android:textAlignment="center"
-        android:layout_alignTop="@+id/letter5"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/letter0"
+        android:layout_toRightOf="@+id/letter4"
+        android:layout_toEndOf="@+id/letter4" />
 
     <TextView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:text="New Text"
         android:id="@+id/letter7"
-        android:layout_alignTop="@+id/letter5"
-        android:layout_alignLeft="@+id/letter4"
-        android:layout_alignStart="@+id/letter4"
         android:background="@drawable/block"
         android:textSize="60sp"
-        android:textAlignment="center" />
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/letter3"
+        android:layout_alignLeft="@+id/letter3"
+        android:layout_alignStart="@+id/letter3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/submission"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/background_floating_material_light" />
 
 </RelativeLayout>
